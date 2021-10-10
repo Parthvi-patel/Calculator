@@ -19,6 +19,9 @@ public class Calculator {
         float c = a / b;
         System.out.println("Division of " + a + "/" + b + "=" + c);
     }
+    private static void mod(float a, float b){
+        float c = a % b;
+        system.out.println("Modulo of" +a +"%"+b+ + "=" +c);
 
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
@@ -27,6 +30,7 @@ public class Calculator {
         System.out.println("2. Substraction");
         System.out.println("3. Multiplication");
         System.out.println("4. Division");
+        System.out.println("5. Modulo");
         int choice = sc.nextInt();
         System.out.println("Enter first Number : ");
         int a = sc.nextInt();
@@ -44,6 +48,9 @@ public class Calculator {
                 break;
             case 4:
                 div(a, b);
+                break;
+            case 5:
+                mod(a,b);
                 break;
             default:
                 System.out.println("Please  Enter choice between 1-4");
