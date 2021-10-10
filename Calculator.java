@@ -20,6 +20,10 @@ public class Calculator {
         System.out.println("Division of " + a + "/" + b + "=" + c);
     }
 
+    private static void mod(int a, int b) {
+            int c = a%b;
+            System.out.println("Reminder of "+a+"%"+b+"="+c);
+            }
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter your Choice of Calculation");
@@ -45,8 +49,11 @@ public class Calculator {
             case 4:
                 div(a, b);
                 break;
+            case 5:
+                mod(a,b);
+                break;
             default:
-                System.out.println("Please  Enter choice between 1-4");
+                System.out.println("Please  Enter choice between 1-5");
         }
     }
 
